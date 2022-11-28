@@ -1,0 +1,44 @@
+
+/* Work */
+
+.work-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+  .work-text {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+  }
+  .work-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .work-item {
+    width: 270px;
+  }
+  .work-item:not(:last-child) {
+    margin-right: 30px;
+  }
+  
+  .work-icons {
+    display: flex;
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--accent-bg-color);
+    border-radius: 4px;
+  }
+  .work-icon {
+    width: 70px;
+    height: 70px;
+  }

@@ -1,3 +1,24 @@
-@import "./utils/vars";
-@import "./components/page-header";
+// UTILS
+@import "./utils/variables";
+@import "./utils/base";
+@import "./utils/visibility";
+
+// COMPONENTS
+@import "./components/container";
+@import "./components/section";
 @import "./components/logo";
+@import "./components/page-header";
+@import "./components/page-footer";
+@import "./components/button";
+@import "./components/title";
+@import "./components/backdrop";
+@import "./components/modal";
+@import "./components/modal-form";
+
+// LAYOUT
+@import "./layout/hero";
+@import "./layout/work";
+@import "./layout/project";
+@import "./layout/team";
+@import "./layout/clients";
+@import "./layout/portfolio";
