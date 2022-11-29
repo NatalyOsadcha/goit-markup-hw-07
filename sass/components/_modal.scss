@@ -1,43 +1,39 @@
-
-
 /* Modal */
 .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    transition: transform var(--transition-duration)
-      var(--transition-timing-function);
-  
-    width: 528px;
-    height: 581px;
-  
-    background: var(--primary-bg-color);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform $transition-duration $transition-timing-function;
+
+  width: 528px;
+  height: 581px;
+
+  background: $primary-bg-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.modal__close-button {
+  display: flex;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+
+  background: $primary-bg-color;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  transition: fill $transition-duration $transition-timing-function;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
   }
-  
-  .modal-close-button {
-    display: flex;
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    cursor: pointer;
-    width: 30px;
-    height: 30px;
-  
-    background: var(--primary-bg-color);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
-    transition: fill var(--transition-duration) var(--transition-timing-function);
-  }
-  
-  .modal-close-button:hover,
-  .modal-close-button:focus {
-    fill: var(--accent-color);
-  }
-  
+}

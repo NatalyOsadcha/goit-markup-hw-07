@@ -1,0 +1,93 @@
+// ORDER FORM
+
+.order {
+  padding: 40px;
+
+  &__text {
+    margin: 0 0 12px 0;
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    color: $primary-text-color;
+  }
+
+  &__line {
+    margin-bottom: 10px;
+    position: relative;
+  }
+
+  &__comment {
+    margin-bottom: 20px;
+  }
+}
+
+.order {
+  &__input,
+  &__textarea {
+    width: 100%;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    color: $primary-text-color;
+    cursor: pointer;
+    outline: none;
+    transition: border $transition-duration $transition-timing-function;
+    &:focus {
+      border: 1px solid $accent-color;
+    }
+  }
+}
+
+.order {
+  &__input {
+    display: block;
+    height: 40px;
+    padding: 11px 12px 11px 42px;
+  }
+  &__textarea {
+    height: 120px;
+    padding: 12px 16px;
+    resize: none;
+  }
+}
+
+.order__textarea::placeholder {
+  font-size: 12px;
+  line-height: 1.077;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.order {
+  &__label {
+    display: inline-block;
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.077;
+    letter-spacing: 0.01em;
+
+    color: #757575;
+  }
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 12px;
+    display: inline-block;
+    fill: $primary-text-color;
+    cursor: pointer;
+    transition: fill $transition-duration $transition-timing-function;
+  }
+}
+
+.order__input:focus + .order__icon {
+  fill: $accent-color;
+}

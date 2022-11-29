@@ -1,19 +1,24 @@
+// BASE
+@import "./base/variables";
+@import "./base/base";
+
 // UTILS
-@import "./utils/variables";
-@import "./utils/base";
 @import "./utils/visibility";
 
 // COMPONENTS
 @import "./components/container";
 @import "./components/section";
 @import "./components/logo";
+@import "./components/social-net";
 @import "./components/page-header";
 @import "./components/page-footer";
 @import "./components/button";
 @import "./components/title";
 @import "./components/backdrop";
 @import "./components/modal";
-@import "./components/modal-form";
+@import "./components/order-form";
+@import "./components/checkbox";
+@import "./components/overlay";
 
 // LAYOUT
 @import "./layout/hero";

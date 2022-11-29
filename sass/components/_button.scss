@@ -1,5 +1,45 @@
+.button {
+  font-family: inherit;
+  background: $accent-color;
+  color: $white-title-color;
+  border: none;
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
 
-  .button {
-    font-family: inherit;
-    color: currentColor;
+// Hero button
+
+.hero__button {
+  display: inline-block;
+  padding: 10px 32px;
+  min-width: 216px;
+  letter-spacing: 0;
+}
+
+// ORDER BUTTON
+
+.order__button {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  transition: background-color $transition-duration $transition-timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $order-btn;
   }
+}
+
+// FOOTER BUTTON
+
+.subscribe__button {
+  padding: 10px 28px;
+  text-align: left;
+}

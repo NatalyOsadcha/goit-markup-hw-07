@@ -1,20 +1,23 @@
-
 /* Logo */
 .logo {
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-  }
-  .header-logo {
-    margin-right: 93px;
-    padding-top: 24px;
-    padding-bottom: 25px;
-    color: var(--logo-black-color);
-  }
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
   
-  .accent {
-    color: var(--accent-color);
+  &__accent {
+    color: $accent-color;
   }
-  
+}
+
+.header__logo {
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  color: $logo-black-color;
+}
+
+.footer__logo {
+  color: $white-title-color;
+}

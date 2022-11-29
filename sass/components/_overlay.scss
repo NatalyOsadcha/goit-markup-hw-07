@@ -1,0 +1,28 @@
+// OVERLAY
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+
+  transform: translateY(0);
+  transition: transform $transition-duration $transition-timing-function;
+
+  &__text {
+    position: absolute;
+    bottom: 0;
+    padding: 63px 24px;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    color: $white-title-color;
+  }
+}
+
+.portfolio__link {
+  &:hover .overlay,
+  &:focus .overlay {
+    transform: translateY(-100%);
+  }
+}

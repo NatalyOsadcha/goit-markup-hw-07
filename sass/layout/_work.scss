@@ -1,7 +1,33 @@
+// Work
 
-/* Work */
+.work {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    width: 270px;
+  }
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
 
-.work-title {
+  &__icons {
+    display: flex;
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    background-color: $accent-bg-color;
+    border-radius: 4px;
+  }
+  &__icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  &__title {
     margin-top: 0;
     margin-bottom: 10px;
     font-weight: 700;
@@ -10,35 +36,11 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
   }
-  .work-text {
+  &__text {
     margin-top: 0;
     margin-bottom: 0;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--secondary-text-color);
+    color: $secondary-text-color;
   }
-  .work-list {
-    display: flex;
-    justify-content: space-between;
-  }
-  .work-item {
-    width: 270px;
-  }
-  .work-item:not(:last-child) {
-    margin-right: 30px;
-  }
-  
-  .work-icons {
-    display: flex;
-    margin-bottom: 30px;
-    width: 270px;
-    height: 120px;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--accent-bg-color);
-    border-radius: 4px;
-  }
-  .work-icon {
-    width: 70px;
-    height: 70px;
-  }
+}
