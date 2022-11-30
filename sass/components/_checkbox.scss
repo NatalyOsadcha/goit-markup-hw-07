@@ -12,7 +12,6 @@
     margin-right: 3px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-
     color: $secondary-text-color;
   }
 }
@@ -32,12 +31,11 @@
     display: block;
     height: 1px;
     width: 115px;
-
     background-color: $accent-color;
   }
 }
 
-.icon {
+.checkbox {
   &__wrapper {
     display: flex;
     align-items: center;
@@ -48,19 +46,19 @@
     border: 2px solid $primary-text-color;
     border-radius: 2px;
   }
-  &__mark {
+  &__icon {
     fill: transparent;
   }
 }
 
 .checkbox input {
-  &:checked + .checkbox__label .icon__wrapper {
+  &:checked + .checkbox__label .checkbox__wrapper {
     background-color: $accent-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
     border: none;
   }
 
-  &:checked + .checkbox__label .icon__wrapper .icon__mark {
+  &:checked + .checkbox__label .checkbox__wrapper .checkbox__icon {
     fill: $white-title-color;
   }
 

@@ -54,11 +54,9 @@
 // Site Auth
 
 .auth {
-  &__list {
     display: flex;
     align-items: baseline;
     margin-left: auto;
-  }
 
   &__item:not(:last-child) {
     margin-right: 30px;
